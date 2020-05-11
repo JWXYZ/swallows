@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-config" />
+        <module name="eureka-servers" />
+        <module name="swallows-common" />
+        <module name="swallows-eureka-server" />
+        <module name="swallows-search" />
+        <module name="swallows-core" />
+        <module name="swallows-portal" />
+        <module name="swallows-security" />
+        <module name="swallows-mbg" />
+        <module name="swallows-eureka-services" />
+        <module name="swallows-admin" />
+        <module name="service-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-servers" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-servers" options="-parameters" />
+      <module name="service-config" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
+      <module name="swallows-admin" options="-parameters" />
+      <module name="swallows-common" options="-parameters" />
+      <module name="swallows-core" options="-parameters" />
+      <module name="swallows-eureka-server" options="-parameters" />
+      <module name="swallows-eureka-services" options="-parameters" />
+      <module name="swallows-mbg" options="-parameters" />
+      <module name="swallows-portal" options="-parameters" />
+      <module name="swallows-search" options="-parameters" />
+      <module name="swallows-security" options="-parameters" />
+    </option>
+  </component>
+</project>

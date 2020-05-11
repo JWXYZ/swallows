@@ -1,0 +1,17 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: service-gateway
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+  instance:
+    prefer-ip-address: true
+

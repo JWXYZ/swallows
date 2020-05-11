@@ -1,0 +1,22 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: swallows-search
+  profiles:
+    active: dev
+
+
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml
+logging:
+  level:
+    root: info
+    com.swallows: debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
